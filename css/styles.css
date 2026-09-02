@@ -119,8 +119,8 @@ h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; font-weight: 800; }
 .hero--about .hero-photo-bleed img { object-position: right 25%; }
 .hero--services .hero-copy { padding: 64px 0 84px; }
 .hero--services .hero-photo-bleed img { object-position: center 30%; }
-.hero--reviews .hero-copy { padding: 80px 0 130px; }
-.hero--reviews .hero-photo-bleed img { object-position: center 22%; }
+.hero--reviews .hero-copy { padding: 88px 0 150px; }
+.hero--reviews .hero-photo-bleed img { width: 118%; object-position: center 14%; }
 .hero--reviews .hero-photo-bleed::before {
   background: linear-gradient(90deg,
     rgba(247, 250, 253, .97) 0%,
@@ -674,7 +674,7 @@ h1, h2 { letter-spacing: -.022em; }
 .hero-copy > *:nth-child(3) { animation-delay: .23s; }
 .hero-copy > *:nth-child(4) { animation-delay: .32s; }
 .hero-copy > *:nth-child(5) { animation-delay: .41s; }
-.hero-photo img, .hero-photo-bleed img, .hero .photo img { animation: hero-img-in 1s cubic-bezier(.22, .61, .36, 1) backwards .25s; }
+.hero-photo img, .hero .photo img { animation: hero-img-in 1s cubic-bezier(.22, .61, .36, 1) backwards .25s; }
 
 /* --- Scroll reveal system (classes set by js/main.js) --- */
 .reveal {
