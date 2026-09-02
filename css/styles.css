@@ -89,7 +89,6 @@ h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; font-weight: 800; }
   content: ""; position: absolute; left: 0; right: 0; bottom: 0;
   height: 3px; background: var(--blue); border-radius: 2px 2px 0 0;
 }
-.main-nav .caret { width: 13px; height: 13px; }
 .header-actions { display: flex; align-items: center; gap: 20px; }
 .header-phone {
   display: inline-flex; align-items: center; gap: 8px;
@@ -131,15 +130,14 @@ h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; font-weight: 800; }
 
 /* ============ Trust bar (home) ============ */
 .trust-bar {
-  background: #fff; border: 1px solid var(--border); border-radius: var(--radius);
-  box-shadow: var(--shadow); display: flex; align-items: center;
-  padding: 20px 10px; margin-top: -34px; position: relative; z-index: 5;
+  display: flex; align-items: stretch; gap: 14px;
+  margin-top: -34px; position: relative; z-index: 5;
 }
 .trust-item {
-  flex: 1; display: flex; align-items: flex-start; gap: 12px; padding: 4px 18px;
-  border-left: 1px solid var(--border);
+  flex: 1; display: flex; align-items: flex-start; gap: 12px; padding: 18px;
+  background: #fff; border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
-.trust-item:first-child { border-left: none; }
 .trust-item .icon { color: var(--blue); width: 30px; height: 30px; margin-top: 2px; }
 .trust-item h3 { font-size: 13.5px; margin-bottom: 3px; }
 .trust-item p { font-size: 12px; color: var(--muted); line-height: 1.45; }
@@ -262,10 +260,7 @@ h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; font-weight: 800; }
 .step-v p { font-size: 13.5px; color: var(--muted); }
 
 /* ============ Feature bar (rows of icon features in white card) ============ */
-.feature-bar {
-  background: #fff; border: 1px solid var(--border); border-radius: var(--radius);
-  box-shadow: var(--shadow); display: flex; padding: 24px 8px;
-}
+.feature-bar { display: flex; gap: 14px; }
 .feature-bar .trust-item .icon { width: 32px; height: 32px; }
 
 /* ============ Split sections ============ */
@@ -465,7 +460,8 @@ h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; font-weight: 800; }
   .services-grid, .reviews-grid, .team-grid, .neigh-grid { grid-template-columns: repeat(2, 1fr); }
   .services-grid-4, .value-grid, .percent-grid { grid-template-columns: repeat(2, 1fr); }
   .trust-bar, .feature-bar, .mini-stats { flex-wrap: wrap; }
-  .trust-item, .mini-stat { flex: 1 1 45%; border-left: none; padding: 10px 14px; }
+  .trust-item { flex: 1 1 45%; padding: 14px 16px; }
+  .mini-stat { flex: 1 1 45%; border-left: none; padding: 10px 14px; }
   .why-card { grid-template-columns: 1fr; }
   .split { grid-template-columns: 1fr; }
   .pricing-card { grid-template-columns: 1fr; text-align: left; }
@@ -713,7 +709,7 @@ h1, h2 { letter-spacing: -.022em; }
   .hero-copy { padding: 38px 0; }
   .stats-row { flex-wrap: wrap; gap: 14px 0; }
   .stat { flex: 1 1 45%; border-left: none; padding: 0; }
-  .trust-bar { margin-top: -20px; padding: 12px 8px; }
+  .trust-bar { margin-top: -20px; gap: 10px; }
   .why-card { padding: 20px; }
   .cta-banner { padding: 24px 20px; }
   .pill { padding: 10px 15px; font-size: 13px; }
