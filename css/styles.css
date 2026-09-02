@@ -118,7 +118,14 @@ h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; font-weight: 800; }
 .hero--about .hero-copy { padding: 76px 0 100px; }
 .hero--about .hero-photo-bleed img { object-position: right 25%; }
 .hero--services .hero-copy { padding: 64px 0 84px; }
-.hero--services .hero-photo-bleed img { object-position: center 30%; }
+.hero--services .hero-photo-bleed { left: 48%; }
+.hero--services .hero-photo-bleed img { object-position: center 20%; }
+.hero--services .hero-photo-bleed::before {
+  background: linear-gradient(90deg,
+    #f7fafd 0%,
+    rgba(247, 250, 253, .75) 12%,
+    rgba(247, 250, 253, 0) 32%);
+}
 .hero--reviews .hero-copy { padding: 88px 0 150px; }
 .hero--reviews .hero-photo-bleed img { width: 118%; object-position: center 14%; }
 .hero--reviews .hero-photo-bleed::before {
