@@ -115,8 +115,12 @@ h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; font-weight: 800; }
 .hero--bleed .hero-copy { position: relative; z-index: 2; }
 .hero--home .hero-grid { grid-template-columns: minmax(0, 520px) 1fr; }
 .hero--home .hero-copy { padding: 110px 0 190px; }
-.hero--contact .hero-copy { padding: 72px 0 80px; }
-.hero--contact .hero-photo-bleed img { object-position: center 40%; }
+.hero--contact .hero-copy { padding: 56px 0 64px; }
+.hero--contact .hero-photo-bleed img {
+  position: absolute; top: 0; right: 0;
+  height: 100%; width: auto; max-width: none;
+}
+.hero--contact .hero-photo-bleed img,
 .hero--reviews .hero-photo-bleed img,
 .hero--services .hero-photo-bleed img {
   -webkit-mask-image: linear-gradient(90deg,
@@ -126,10 +130,12 @@ h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; font-weight: 800; }
 }
 .hero--contact .hero-photo-bleed::before {
   background: linear-gradient(90deg,
-    rgba(247, 250, 253, .98) 0%,
-    rgba(247, 250, 253, .92) 45%,
-    rgba(247, 250, 253, .5) 58%,
-    rgba(247, 250, 253, 0) 72%);
+    rgba(247, 250, 253, .96) 0%,
+    rgba(247, 250, 253, .93) 35%,
+    rgba(247, 250, 253, .82) 45%,
+    rgba(247, 250, 253, .55) 52%,
+    rgba(247, 250, 253, .25) 57%,
+    rgba(247, 250, 253, 0) 62%);
 }
 .hero--about .hero-copy { padding: 76px 0 100px; }
 .hero--about .hero-photo-bleed img { object-position: right 25%; }
