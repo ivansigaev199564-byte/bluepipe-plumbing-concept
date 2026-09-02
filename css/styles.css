@@ -116,11 +116,7 @@ h1, h2, h3, h4 { color: var(--navy); line-height: 1.2; font-weight: 800; }
 .hero--home .hero-grid { grid-template-columns: minmax(0, 520px) 1fr; }
 .hero--home .hero-copy { padding: 110px 0 190px; }
 .hero--contact .hero-copy { padding: 72px 0 80px; }
-.hero--contact .hero-photo-bleed img {
-  position: absolute; top: 0; right: 0;
-  height: 100%; width: auto; max-width: none;
-}
-.hero--contact .hero-photo-bleed img,
+.hero--contact .hero-photo-bleed img { object-position: center 40%; }
 .hero--reviews .hero-photo-bleed img,
 .hero--services .hero-photo-bleed img {
   -webkit-mask-image: linear-gradient(90deg,
